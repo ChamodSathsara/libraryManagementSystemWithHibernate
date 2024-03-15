@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bookPane" prefHeight="825.0" prefWidth="1524.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BooksFormController">
+   <children>
+      <Label fx:id="txtBookCatagories" layoutX="49.0" layoutY="55.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBooks" layoutX="97.0" layoutY="138.0" prefHeight="651.0" prefWidth="1315.0">
+        <columns>
+          <TableColumn fx:id="collBookId" prefWidth="57.0" text="Id" />
+          <TableColumn fx:id="collBookTopic" prefWidth="229.99996948242188" text="Topic" />
+            <TableColumn fx:id="collBookAuthor" prefWidth="229.99996948242188" text="Author" />
+            <TableColumn fx:id="collBarrowPrice2Week" prefWidth="190.0" text="Barrow Price (2 Weeks)" />
+            <TableColumn fx:id="collBarrowPrice1Week" prefWidth="192.0" text="Barrow Price(1 week)" />
+            <TableColumn fx:id="collGenre" prefWidth="116.0" text="Genre" />
+            <TableColumn fx:id="collAvailability" prefWidth="132.0" text="Availability" />
+            <TableColumn fx:id="collBarrow" prefWidth="167.0" text="Barrow" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

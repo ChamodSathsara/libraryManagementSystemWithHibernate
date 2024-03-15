@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="returnBookPane" prefHeight="825.0" prefWidth="1524.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ContinueBooksFormController">
+   <children>
+      <Label layoutX="135.0" layoutY="56.0" text="Should be return Books">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbtReturnBooks" layoutX="189.0" layoutY="148.0" prefHeight="631.0" prefWidth="1169.0">
+        <columns>
+          <TableColumn fx:id="collNo" prefWidth="75.0" text="No" />
+          <TableColumn fx:id="collBookName" prefWidth="202.0" text="Book Name" />
+            <TableColumn fx:id="collBarrowDate" prefWidth="171.0" text="Barrow Date" />
+            <TableColumn fx:id="collReturnDate" prefWidth="182.0" text="return Date" />
+            <TableColumn fx:id="collLatePayment" prefWidth="170.0" text="Late Payment" />
+            <TableColumn fx:id="collFullPayment" prefWidth="186.0" text="Full Payment" />
+            <TableColumn fx:id="collReturn" prefWidth="186.0" text="Return" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

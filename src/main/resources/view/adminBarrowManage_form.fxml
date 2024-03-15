@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="825.0" prefWidth="1524.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminBarrowManageFormController">
+   <children>
+      <TableView fx:id="tblHistory" layoutX="140.0" layoutY="125.0" prefHeight="626.0" prefWidth="1274.0">
+         <columns>
+            <TableColumn fx:id="collUserName" prefWidth="201.0" text="User Name" />
+            <TableColumn fx:id="collBookId" prefWidth="86.0" text="book Id" />
+            <TableColumn fx:id="collBookTopic" prefWidth="198.99996948242188" text="Book Topic" />
+            <TableColumn fx:id="collBarrowDate" prefWidth="231.0" text="Barrow Date" />
+            <TableColumn fx:id="CollReturnDate" prefWidth="198.0" text="Return Date" />
+            <TableColumn fx:id="collReturnDays" prefWidth="170.0" text="Late Days" />
+            <TableColumn fx:id="collFullPayment" prefWidth="188.0" text="Full Payment" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
